@@ -1,34 +1,179 @@
-# SRMS Pro Max Fixed
+# 🎓 Student Result Management System (SRMS)
 
-Updated MERN Student Result Management System.
+A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application for managing student academic records with secure role-based authentication and analytics dashboards.
 
-## Fixed in this version
-- Logged-in users cannot access Login/Signup pages again.
-- Course is now a proper MongoDB reference and seed creates courses.
-- Teacher can upload marks/attendance only for assigned subjects.
-- Admin can assign subjects to teachers.
-- Cleaner professional UI theme.
+![MERN](https://img.shields.io/badge/Stack-MERN-green)
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-success)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
 
-## Demo credentials after seed
-Admin: admin@srms.com / Admin@123
-Teacher: teacher@srms.com / Teacher@123
-Student: student@srms.com / Student@123
+---
 
-## Run
-Backend:
+## 🚀 Features
+
+### 👨‍💼 Admin
+- Add and manage students
+- Add and manage teachers
+- Add and manage courses
+- Add and manage subjects
+- Assign subjects to teachers
+- View institute statistics
+- Manage announcements
+- View leaderboard and analytics
+
+### 👨‍🏫 Teacher
+- Secure login
+- View assigned subjects
+- Upload internal & external marks
+- Mark attendance
+- View student performance
+
+### 👨‍🎓 Student
+- Secure login
+- View marks and results
+- Check CGPA and percentage
+- View attendance
+- Read announcements
+- Analyze subject-wise performance
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- React Router
+- Axios
+- CSS3
+
+### Backend
+- Node.js
+- Express.js
+- JWT Authentication
+- bcryptjs
+
+### Database
+- MongoDB
+- Mongoose
+
+---
+
+## 🔐 Authentication
+
+- JWT-based authentication
+- Role-based authorization
+- Protected routes
+- Password hashing using bcrypt
+- Separate dashboards for Admin, Teacher, and Student
+
+---
+
+## 📊 Modules
+
+- Authentication
+- Student Management
+- Teacher Management
+- Subject Management
+- Course Management
+- Attendance Management
+- Marks Management
+- Result Analytics
+- Dashboard Statistics
+- Announcements
+
+---
+
+## 📁 Folder Structure
+
+```text
+SRMS/
+│
+├── client/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── server/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── controllers/
+│   │   └── utils/
+│   └── package.json
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/dishamishra1/student-result-management-system.git
+```
+
+### Backend
+
 ```bash
 cd server
 npm install
-cp .env.example .env
 npm run seed
 npm run dev
 ```
 
-Frontend:
+### Frontend
+
 ```bash
 cd client
 npm install
 npm run dev
 ```
 
-Open http://localhost:5173
+---
+
+## 🌟 Key Highlights
+
+- Role-based access control
+- JWT Authentication
+- Attendance Management
+- Student Result Analytics
+- Course & Subject Management
+- Teacher Subject Assignment
+- Dashboard Statistics
+- Modern MERN Architecture
+
+---
+
+
+## 🔮 Future Improvements
+
+- Email notifications
+- Forgot password functionality
+- PDF/Excel report export
+- Profile image upload
+- Advanced filters and search
+- Performance trend charts
+- Responsive mobile optimization
+
+---
+
+## 👩‍💻 Author
+
+**Disha Mishra**
+
+- MCA Student
+- MERN Stack Developer
+- DSA Enthusiast
+
+GitHub: https://github.com/dishamishra1
+
+---
+
+## 📜 License
+
+This project is intended for educational and portfolio purposes.
