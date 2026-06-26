@@ -21,7 +21,7 @@ Admin
 - Manage announcements
 - View leaderboard and analytics
 
-### 👨‍🏫 Teacher
+###  Teacher
 - Secure login
 - View assigned subjects
 - Upload internal & external marks
@@ -174,6 +174,6 @@ GitHub: https://github.com/dishamishra1
 
 ---
 
-## 📜 License
+## License
 
 This project is intended for educational and portfolio purposes.
