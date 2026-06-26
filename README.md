@@ -1,4 +1,4 @@
-# 🎓 Student Result Management System (SRMS)
+Student Result Management System (SRMS)
 
 A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application for managing student academic records with secure role-based authentication and analytics dashboards.
 
@@ -9,9 +9,9 @@ A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application f
 
 ---
 
-## 🚀 Features
+Features
 
-### 👨‍💼 Admin
+Admin
 - Add and manage students
 - Add and manage teachers
 - Add and manage courses
@@ -28,7 +28,7 @@ A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application f
 - Mark attendance
 - View student performance
 
-### 👨‍🎓 Student
+Student
 - Secure login
 - View marks and results
 - Check CGPA and percentage
@@ -38,7 +38,7 @@ A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application f
 
 ---
 
-## 🛠️ Tech Stack
+Tech Stack
 
 ### Frontend
 - React.js
@@ -58,7 +58,7 @@ A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application f
 
 ---
 
-## 🔐 Authentication
+ Authentication
 
 - JWT-based authentication
 - Role-based authorization
@@ -68,7 +68,7 @@ A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application f
 
 ---
 
-## 📊 Modules
+##  Modules
 
 - Authentication
 - Student Management
@@ -83,7 +83,7 @@ A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application f
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```text
 SRMS/
@@ -109,7 +109,7 @@ SRMS/
 
 ---
 
-## ⚙️ Installation
+##Installation
 
 ### Clone the repository
 
@@ -136,7 +136,7 @@ npm run dev
 
 ---
 
-## 🌟 Key Highlights
+##  Key Highlights
 
 - Role-based access control
 - JWT Authentication
@@ -162,7 +162,7 @@ npm run dev
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Disha Mishra**
 
