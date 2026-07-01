@@ -4,6 +4,7 @@ import api from "../api/api";
 import Layout from "../components/Layout";
 import StatCard from "../components/StatCard";
 import AnnouncementList from "../components/AnnouncementList";
+import { GraduationCap, Users, UserCog, BookOpen } from "lucide-react";
 
 function AdminDashboard() {
   const [dashboard, setDashboard] = useState(null);
@@ -116,10 +117,10 @@ function AdminDashboard() {
     <Layout title="Admin Dashboard" subtitle="Manage courses, users, teacher subject access, announcements and result analytics.">
       <section id="dashboard">
         <div className="stats-grid">
-          <StatCard icon="🎓" label="Courses" value={courses.length} hint="Active courses" />
-          <StatCard icon="👩‍🎓" label="Students" value={dashboard?.counts.students || 0} hint="Total enrolled" />
-          <StatCard icon="👨‍🏫" label="Teachers" value={dashboard?.counts.teachers || 0} hint="Faculty users" />
-          <StatCard icon="📚" label="Subjects" value={dashboard?.counts.subjects || 0} hint="Active subjects" />
+          <StatCard icon={GraduationCap} label="Courses" value={courses.length} hint="Active courses" />
+          <StatCard icon={Users} label="Students" value={dashboard?.counts.students || 0} hint="Total enrolled" />
+          <StatCard icon={UserCog} label="Teachers" value={dashboard?.counts.teachers || 0} hint="Faculty users" />
+          <StatCard icon={BookOpen} label="Subjects" value={dashboard?.counts.subjects || 0} hint="Active subjects" />
         </div>
       </section>
 

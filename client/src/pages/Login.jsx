@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { BarChart3, ShieldCheck, CalendarDays, Trophy, GraduationCap } from "lucide-react";
 import api from "../api/api";
 import { useAuth } from "../context/AuthContext";
 
@@ -26,15 +27,15 @@ function Login() {
   return (
     <div className="auth-page premium-auth">
       <section className="auth-left">
-        <div className="brand-icon large">SR</div>
-        <span className="badge">MERN Placement Project</span>
+        <div className="brand-icon large"><GraduationCap size={30} /></div>
+        <span className="badge">Student Result Management System</span>
         <h1>Smart Student Result Management System</h1>
         <p>Role-based academic dashboard for courses, marks, attendance, announcements, analytics and student performance insights.</p>
         <div className="feature-row">
-          <div>📊 Analytics</div>
-          <div>🔐 Role Access</div>
-          <div>📅 Attendance</div>
-          <div>🏆 Leaderboard</div>
+          <div><BarChart3 size={16} strokeWidth={1.75} /> Analytics</div>
+          <div><ShieldCheck size={16} strokeWidth={1.75} /> Role Access</div>
+          <div><CalendarDays size={16} strokeWidth={1.75} /> Attendance</div>
+          <div><Trophy size={16} strokeWidth={1.75} /> Leaderboard</div>
         </div>
       </section>
 

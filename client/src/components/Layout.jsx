@@ -1,5 +1,24 @@
 import React from "react";
+import {
+  LayoutDashboard,
+  BarChart3,
+  FileText,
+  CalendarDays,
+  Bell,
+  Settings,
+  LogOut,
+  GraduationCap,
+} from "lucide-react";
 import { useAuth } from "../context/AuthContext";
+
+const NAV_ITEMS = [
+  { href: "#dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { href: "#analytics", label: "Manage / Analytics", icon: BarChart3 },
+  { href: "#results", label: "Results", icon: FileText },
+  { href: "#attendance", label: "Attendance", icon: CalendarDays },
+  { href: "#announcements", label: "Announcements", icon: Bell },
+  { href: "#settings", label: "Settings", icon: Settings },
+];
 
 function Layout({ title, subtitle, children }) {
   const { user, logout } = useAuth();
@@ -8,9 +27,11 @@ function Layout({ title, subtitle, children }) {
     <div className="app">
       <aside className="sidebar">
         <div className="brand">
-          <div className="brand-icon">SR</div>
+          <div className="brand-icon">
+            <GraduationCap size={22} />
+          </div>
           <div>
-            <h2>SRMS Max</h2>
+            <h2>SRMS</h2>
             <p>Academic Analytics</p>
           </div>
         </div>
@@ -24,15 +45,18 @@ function Layout({ title, subtitle, children }) {
         </div>
 
         <nav className="nav">
-          <a href="#dashboard">🏠 Dashboard</a>
-          <a href="#analytics">📊 Manage / Analytics</a>
-          <a href="#results">📄 Results</a>
-          <a href="#attendance">📅 Attendance</a>
-          <a href="#announcements">🔔 Announcements</a>
-          <a href="#settings">⚙️ Settings</a>
+          {NAV_ITEMS.map(({ href, label, icon: Icon }) => (
+            <a key={href} href={href}>
+              <Icon size={18} strokeWidth={1.75} />
+              {label}
+            </a>
+          ))}
         </nav>
 
-        <button className="logout" onClick={logout}>Logout</button>
+        <button className="logout" onClick={logout}>
+          <LogOut size={16} strokeWidth={1.75} />
+          Logout
+        </button>
       </aside>
 
       <main className="main">
@@ -42,7 +66,7 @@ function Layout({ title, subtitle, children }) {
             <h1>{title}</h1>
             <p>{subtitle}</p>
           </div>
-          <div className="top-pill">SRMS Control Center</div>
+          <div className="top-pill">Control Center</div>
         </div>
         {children}
       </main>

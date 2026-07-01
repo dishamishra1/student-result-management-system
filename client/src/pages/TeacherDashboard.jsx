@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import StatCard from "../components/StatCard";
 import AnnouncementList from "../components/AnnouncementList";
 import PasswordSettings from "../components/PasswordSettings";
+import { Users, BookOpen, ClipboardList, Target } from "lucide-react";
 
 function TeacherDashboard() {
   const [stats, setStats] = useState(null);
@@ -54,10 +55,10 @@ function TeacherDashboard() {
     <Layout title="Teacher Dashboard" subtitle="Upload marks and attendance only for assigned subjects.">
       <section id="dashboard">
         <div className="stats-grid">
-          <StatCard icon="👩‍🎓" label="Students" value={stats?.counts.students || 0} hint="Available students" />
-          <StatCard icon="📚" label="Assigned Subjects" value={subjects.length} hint="Your allowed subjects" />
-          <StatCard icon="📝" label="Marks Entries" value={stats?.counts.marks || 0} hint="Uploaded records" />
-          <StatCard icon="🎯" label="Focus" value="85%" hint="Target class avg" />
+          <StatCard icon={Users} label="Students" value={stats?.counts.students || 0} hint="Available students" />
+          <StatCard icon={BookOpen} label="Assigned Subjects" value={subjects.length} hint="Your allowed subjects" />
+          <StatCard icon={ClipboardList} label="Marks Entries" value={stats?.counts.marks || 0} hint="Uploaded records" />
+          <StatCard icon={Target} label="Focus" value="85%" hint="Target class avg" />
         </div>
       </section>
 
